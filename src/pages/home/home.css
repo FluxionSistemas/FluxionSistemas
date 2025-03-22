@@ -1,0 +1,40 @@
+.circle-template {
+    transform: rotate(-90deg);
+    animation: rotateText 40s linear infinite;
+}
+  
+@keyframes rotateText {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(810deg);
+    }
+}
+
+.promotionalContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-container {
+    position: absolute;
+    width: 820px;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+}
+
+.circle-container svg {
+    position: relative;
+    z-index: 0;
+}
+
+.promotionalContainer img {
+    position: relative;
+    height: 350px;
+    width: 630px;
+    z-index: 1;
+}
