@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import './home.css';
-import Typewriter from 'typewriter-effect/dist/core';
+import { Typewriter } from 'react-simple-typewriter'
 import fakeVideo from '../../assets/imgs//home/fakeVideo.png';
 import ImgCard1 from '../../assets/imgs/home/CardImg.png';
 import laptop_icon from '../../assets/imgs/home/icons/note.svg';
@@ -15,25 +15,24 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const Home = () => {
-    React.useEffect(() => {
-        const typewriter = new Typewriter(document.getElementById('typewriter'), {
-            loop: true,
-            delay: 75,
-        });
-
-        typewriter
-            .typeString(`Vamos moldar <br/> o futuro juntos!`)
-            .pauseFor(5000)
-            .deleteAll()
-            .start();
-    }, []);
+    const words = ['Vamos moldar\n o futuro juntos!'];
 
     return (
         <>
             <Header />
             <section>
                 <div className="text-center p-4" style={{ marginTop: '100px', marginBottom: '100px' }}>
-                    <h1 className="text-7xl font-bold mb-4" id="typewriter" style={{minHeight: '144px'}}></h1>
+                    <h1 className="text-6xl font-bold mb-4" style={{ width: '460px', margin: '0 auto', minHeight: '140px' }}> 
+                        <Typewriter
+                            words={words}
+                            loop={true}
+                            cursor
+                            cursorStyle="|"
+                            typeSpeed={100}
+                            deleteSpeed={50}
+                            delaySpeed={2000}
+                        />
+                    </h1>
                     <p className="text-lg text-gray-600">
                         Desenvolvemos softwares para empresas que querem <br /> crescer para um próximo nível.
                     </p>
