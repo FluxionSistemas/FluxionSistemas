@@ -1,0 +1,45 @@
+.footerBody{
+    padding: 50px 100px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.socialMedia{
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socialMedia img{
+    width: 30px;
+}	
+
+.nav_footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0px 150px;
+}
+
+.nav_footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ftHr{
+    width: 90%;
+    border: 1px solid #BABABA;
+}
+
+.fnFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+}

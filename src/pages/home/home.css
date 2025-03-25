@@ -1,3 +1,5 @@
+/* First section */
+
 .circle-template {
     transform: rotate(-90deg);
     animation: rotateText 40s linear infinite;
@@ -17,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .circle-container {
@@ -37,4 +40,191 @@
     height: 350px;
     width: 630px;
     z-index: 1;
+}
+
+
+/* Second section */
+.secondSection{
+    color: #fff;
+    background-color: #000;
+    padding: 100px 20%;
+}
+
+.costumersReviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    letter-spacing: 5px;
+    flex-direction: column;
+}
+
+.costumerIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketingCards{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:50px;
+}
+
+.marketCard1, .marketCard{
+    background-color: #222222;
+    height: 450px;
+    width: 450px;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.marketCard1 h2, .marketCard h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-wrap: nowrap;
+}
+
+.sectionBtn button{
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 150px;
+    padding: 3px;
+    margin-bottom: 25px;
+}
+
+.marketCard1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.moreInfo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.moreInfo button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+
+.moreInfo h2 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.marketCard{
+    display: flex;
+    position: relative;
+}
+
+.marketCard img{
+    position: absolute;
+    height: 500px;
+    top: 10;
+    right: 0;
+    bottom: 0;
+}
+
+.letsTalkBtnWB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 200px;
+    padding: 5px;
+    margin: 25px;
+}
+
+/* Third section */
+.thirdSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 20%;
+    background-color: #fff;
+    color: #000;
+}
+
+.thirdContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+    min-width: 570px;
+    margin-bottom: 60px;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 50%;
+    min-width: 570px;
+    gap: 70px;
+}
+
+.rightSide article{
+    display: flex;
+    gap: 15px;
+}
+
+.rightSide img{
+    height: 35px;
+    width: 35px;
+}
+
+.carrousel{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+}
+
+.carrouselBtns{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.carrouselBtns button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #000;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* Fourth section */
+.fourthSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 20%;
+    background-color: #000;
+    color: #fff;
+    gap: 50px;
 }

@@ -1,6 +1,9 @@
 import React from 'react';
 import './header.css';
-import logotipo from '../../assets/imgs/logofluxion1.png';
+
+import logotipo from '../../assets/imgs/header/logotipoFluxion.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
@@ -18,7 +21,7 @@ const Header = () => {
                 </nav>
                 <button className='letsTalkBtn bg-black text-white px-4 py-2 flex items-center'>
                     Vamos conversar 
-                    <span className="ml-2">→</span>
+                    <span className="ml-2"><FontAwesomeIcon icon={faArrowRight}/></span>
                 </button>
             </div>
         </header>
